@@ -13,10 +13,10 @@ const app = express();
 app.use(cors({origin: "*" }));
 app.use(bodyParser.json());
 
-app.use(express.static('./dist/quicklabs'));
+app.use(static(__dirname + '/dist/quicklabs'));
 
-app.get('/*', function(req, res) {
-  res.sendFile('index.html', {root: 'dist/quicklabs/'});
+app.all('*', (req, res) => {
+  res.status(200).sendFile(__dirname + '/dist/quicklabs/index.html');
 });
 
 app.listen(process.env.PORT || 3000);
