@@ -3,6 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+var os = require('os');
+var networkInterfaces = os.networkInterfaces();
 
 
 
@@ -19,7 +21,10 @@ app.get('/*', function(req, res) {
   res.sendFile('index.html', {root: 'dist/quicklabs/'});
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, () => {
+  console.log('listening on port 3000');
+  console.log(networkInterfaces);
+});
 
 
 /*

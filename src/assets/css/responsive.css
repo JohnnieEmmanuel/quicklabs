@@ -122,7 +122,7 @@
     color: #3ecf8e;
     font-size: 14px; }
   .hero-area .intro-img {
-    padding: 50px 0 0px; }
+    padding: 100px 0 0px; }
   .blog-hero-area .contents h2 {
     font-size: 36px; }
   .btn-singin {
@@ -148,7 +148,7 @@
   .showcase-area .pr-0, .px-0 {
     padding-right: 15px !important; }
   #showcase {
-    padding-bottom: 0px; }
+    padding-bottom: 275px; }
   #testimonial .testimonial-area {
     width: 98%; } }
 
@@ -165,9 +165,6 @@
     width: 100px; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .gradient_edit{
-    height: 200px;
-  }
   .bg-inverse {
     background: #191c1e; }
   .navbar {
@@ -226,13 +223,9 @@
     margin-bottom: 20px; }
   .section-header .desc-text p {
     font-size: 14px;
-    color: #ffffff;
+    color: #5e629c;
     line-height: 24px;
-    margin-bottom: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-   }
-   
+    margin-bottom: 0; }
   #features .feature-item {
     padding: 10px; }
   #features .feature-item .feature-icon {
@@ -243,7 +236,7 @@
   .showcase-area .pr-0, .px-0 {
     padding-right: 15px !important; }
   #showcase {
-    padding-bottom: 0px; }
+    padding-bottom: 250px; }
   #pricing .pricing-table h1 span {
     left: 4%; }
   #pricing .pricing-table {
@@ -447,7 +440,9 @@
     line-height: 33px; } }
 
 
-   
+/*
+my edit*/
+
     @media only screen and ( min-width:768px){
 
       #team .single-team h5.team-title {
