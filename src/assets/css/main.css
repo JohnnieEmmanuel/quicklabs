@@ -750,7 +750,8 @@ Domain Path:      /languages/
       Showcase 
       ========================================================================== */
    #showcase {
-     padding-bottom: 375px; }
+     padding-bottom: 150px; }
+     
      #showcase .right-position {
        position: relative; }
      #showcase .showcase-area {
